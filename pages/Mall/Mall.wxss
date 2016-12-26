@@ -49,7 +49,6 @@ swiper{
 .bottom view image{
   width: 40rpx;
   height: 60rpx;
-
 }
 .weiwancheng,.yiwancheng,.gouwuche{
   width: 100%;

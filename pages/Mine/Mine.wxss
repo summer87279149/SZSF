@@ -1,0 +1,32 @@
+.topView{
+    position: relative;
+}
+.topView .tupian{
+    display: block;
+    margin: 0 auto;
+    width: 200rpx;
+    height: 200rpx;
+}
+.topView .touxiang{
+    display: block;
+    margin: 0 auto;
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 70rpx;
+}
+.topView view{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 24rpx;
+}
+.topView view text{
+    font-size: 40rpx;
+    color: #3b2935;
+}
+.cellView{
+    height: 100rpx;
+    border-bottom: 2rpx solid gray;
+}
+.cellView text{
+    line-height: 100rpx;
+}

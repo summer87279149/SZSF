@@ -1,1 +1,14 @@
-<view>我的</view>
+<scroll-view style="height: 900rpx;" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-top="100">
+    <view class="topView">
+        <image src="../../source/wode.png" mode="aspectFit" class="tupian"></image>
+        <image src="../../source/wode.png" class="touxiang"></image>
+        <view><text>姓名{{}}</text></view>
+    </view>
+
+ <block wx:for="{{cells}}">
+    <view class="cellView">
+          <text>{{item}}</text>    
+    </view>
+ </block>
+
+</scroll-view>
