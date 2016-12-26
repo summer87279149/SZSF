@@ -1,70 +1,62 @@
-
-.nav{
-  background: #fff;
-  padding:0 10px;
+swiper{
+   height: 410rpx;
 }
-.list{
-  display: flex;
-  font-size: 16px;
-  color: #9A9A9A;
+.slide-image{
+  display: block;
+  height: 100%;
+  width: 100%;
 }
-.list .item {
-  flex: 1;
-  text-align: center;
-  padding: 15px 0 5px 0;
-  margin:0 10px 10px 10px;
-  border-bottom: 2px solid #fff;
+.listView{
+  margin-top: 10rpx;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-between;
 }
-.list .action {
-  border-bottom: 2px solid #F5B223;
-  color:#F5B223;
+.cellView{
+  width: 280rpx;
+  height: 280rpx;
 }
-
-.swiper {
-  height: 90%;
+.cellView image{
+  width: 100%;
+  height: 100%;
 }
-
-swiper-item{
-  overflow-y: scroll;
-}
-.banner swiper{
-  height: 410rpx;
-}
-swiper-item image{
-  width:100%;
-  height: 400rpx;
-}
-.listMall{
-  display:-webkit-flex;
-	display:flex;
-	width:100%;
-  flex-wrap:wrap; 
-}
-.listMall view{
-    width: 230rpx; 
-    margin-top: 10rpx;
-    margin-left: 12rpx;
-}
-.listMall .img{
-  text-align:center;
-}
-.listMall view image{
-    width: 230rpx;
-    height: 230rpx;
-}
-.listMall .name{
-  font-size: 25rpx;
-  height: 44px;
-  color: #9A9A9A;
-  overflow : hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  line-height: 22px;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-.listMall .now_price{
-  color:#F98809;
+.cellView text{
+  display: block;
   font-size: 30rpx;
 }
+.cellView .price{
+  margin-top: 20rpx;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+.bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0rpx;
+  z-index: 5555;
+  display: -webkit-flex;
+  justify-content:space-around;
+}
+.bottom view{
+  flex: 1;
+  height: 70rpx;
+  display: -webkit-flex;
+  padding-left: 20rpx;
+}
+.bottom view image{
+  width: 40rpx;
+  height: 60rpx;
 
+}
+.weiwancheng,.yiwancheng,.gouwuche{
+  width: 100%;
+}
+.bottom view text{
+  font-size: 30rpx;
+  line-height: 70rpx;
+  margin-left: 14rpx;
+  color: #3b2935;
+}

@@ -7,13 +7,10 @@ Page({
     userInfo: {},
     lon:"",
     lat:"",
-    imgUrls: [
-      
-    ],
+    imgUrls: [],
     homebanner:[],
     shops:[],
     cell: {}
-
   },
   //事件处理函数
   bindViewTap: function() {

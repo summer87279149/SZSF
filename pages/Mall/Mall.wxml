@@ -1,40 +1,33 @@
-<!--index.wxml-->
-<import src="woshi/woshi.wxml"/> 
-<view class="nav">
-    <view class="list">
-            <block wx:for="{{goodsData}}" wx:key="index">
-                   <view class="item {{clas[index]}}" data-index="{{index}}" bindtap="xun">{{item.title}}</view>
-            </block>
-    </view>
-</view>
-<swiper class="swiper" indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}"  duration="{{duration}}" current="{{current}}"    bindchange="switchs">
-      <swiper-item data-id="{{item}}">
-            <view class="banner">
-                  <swiper indicator-dots="true"
-                  autoplay="true" interval="5000"  duration="1000" >
-                  <block wx:for="{{bander}}" wx:key="index">
+<scroll-view scroll-y="true" style="height: 1300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" >
+      <view class="top">
+            <swiper class="swiperbanner" indicator-dots="true" autoplay="true">
+                  <block wx:for="{{images}}">
                         <swiper-item>
-                              <image mode="aspectFill" wx:if="{{item.cid != 0}}" src="{{item.image}}" bindtap="todetail" id="{{item.cid}}"/>
-                              <image mode="aspectFill" wx:else src="{{item.image}}" id="{{item.cid}}"/>
+                              <image mode="scaleToFill"  src="{{item}}" class="slide-image"/>
                         </swiper-item>
                   </block>
-                  </swiper>
-            </view>
-            <view class="listMall">
-                  <block wx:for="{{IndexList}}" wx:key="index">
-                        <view bindtap="todetail" id="{{item.id}}" class="blocks">
-                        <view class="img"><image src="{{item.thumb}}" mode="aspectFill"/></view>
-                        <view class="name">{{item.title}}</view>
-                        <view>
-                              <text class="now_price">￥{{item.price}}</text>
+            </swiper>
+      </view>
+
+      <view class="listView">
+            <block wx:for="{{products}}">
+                  <view class="cellView">
+                        <image src="{{item.images}}" mode="scaleToFill"></image>
+                        <text>{{item.prodname}}</text>
+                        <view class="price">
+                              <text>会员价:</text>
+                              <text>{{item.price}}</text>
                         </view>
-                        </view> 
-                  </block>
-            </view>
-      </swiper-item>
-      <block wx:for="{{goodsData}}" wx:key="index">
-            <swiper-item data-id="{{item}}" wx:if="{{index>0}}">
-                  <template is="msgItem" data="{{item}}"/>
-            </swiper-item>
-      </block>
-</swiper>
+                        
+                  </view>
+            </block>
+      </view>
+
+
+
+</scroll-view>
+<view class="bottom">
+      <view class="gouwuche" ><image src="../../source/gouwuche.png" mode="aspectFill"></image><text>购物车</text></view>
+      <view class="weiwancheng" ><image src="../../source/wancheng.png" mode="aspectFill"></image><text>已完成</text></view>
+      <view class="yiwancheng" ><image src="../../source/wancheng.png" mode="aspectFill"></image><text>未完成</text></view>
+</view>
