@@ -1,0 +1,136 @@
+.topView{
+  position: fixed;
+  height: 270rpx;
+  background-color: white;
+  z-index:5555;
+  width: 750rpx;
+  margin: 0;
+  top: 0;
+}
+.topView .leftImageView image{
+  width: 280rpx;
+  height: 210rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;  
+}
+.topView .topTextView {
+  position: absolute;
+  top: 20rpx;
+  left: 320rpx;
+  height: 210rpx;
+  overflow: hidden;
+}
+.topView .topTextView text{
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:7; 
+  font-size: 26rpx;
+}
+.buttonView{
+  background-color: gainsboro;
+  position: relative;
+  top: 230rpx;
+  padding-left: 90rpx;
+  height: 40rpx;
+  margin-top: 15rpx;
+
+}
+.buttonView text{
+  font-size: 30rpx;
+}
+.listView{
+ margin-top: 300rpx;
+}
+.listView .cellBGView{
+  background-color: gainsboro;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  border: 2rpx gainsboro solid;
+}
+.listView .cellBGView image{
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.listView .cellBGView .nameTextView{
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+.listView .cellBGView .nameText{
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  color: red;
+}
+.listView .cellBGView .cellMidView{
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:space-around;
+}
+.listView .cellBGView .cellMidView view{
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+
+}
+.line1,.line2{
+  width: 2rpx;
+  background-color: black;
+  height: 100rpx;
+}
+.listView .cellBGView .cellMidView view text{
+  font-size: 30rpx;
+}
+.line3,.line4{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  height: 2rpx;
+  width: 100%;
+  background-color: black;
+}
+.line4{
+  margin-bottom: 30rpx;
+}
+.listView .cellBGView .jieshao {
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:7; 
+  font-size: 26rpx;
+  margin-bottom: 30rpx;
+}
+.listView .cellBGView .xiangmu {
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1; 
+  font-size: 26rpx;
+   
+}
+
+.listView .cellBGView .xiangqing text{
+  width: 170rpx;
+  height: 70rpx;
+  display: block;
+  margin: 0 auto;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 2rpx black solid;
+}
+.blank{
+  height: 20rpx;
+}
+.scroll view{
+  background-color: red;
+  height: 200rpx;
+}

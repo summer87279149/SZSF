@@ -1,0 +1,60 @@
+<view>
+        <view class="topView">
+            <view class="leftImageView">
+                     <image src="../../source/findTec.png" mode="scaleToFill"></image>
+            </view>
+            <view class="topTextView"><text>{{infoText}}</text></view>
+            <view class="buttonView">
+                 <view  bindtap="queryBtnClicked" ><text style="color:{{color[0]}};" id="one">查询附近</text></view>   
+            </view>
+ </view>
+       
+        <scroll-view class="listView" style="height: 1000rpx;" scroll-y="true" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll"  scroll-top="100">
+                <block wx:for="{{technician}}">
+                    <view class="cellBGView">
+                        <image src="{{item.headimgurl}}"></image> 
+                      <view class="nameTextView"> <text class="nameText"> {{item.tname}}</text></view> 
+                        <view class="cellMidView">
+                            
+
+                            <view class="view1">
+                                 
+                                 <text class="pingfenText">评分(满5分)</text> 
+                                 <text class="pingfen">{{item.tscore}}</text>
+                            </view>
+
+                             <view class="line1"> </view>
+
+                            <view class="view2"> 
+                                <text class="danshuText">单 数</text>
+                                <text class="danshu">{{item.orderqty}}单</text>
+                            </view>
+                           
+                            <view class="line2"> </view>
+
+                            <view class="view3">
+                                <text class="juliText">距 离</text>
+                                <text class="juli">{{item.distance}}km</text>
+                            </view>
+                            
+                            
+                            
+                        </view>
+                       
+                        <view class="line3"> </view>
+                        <text class="jieshao">{{item.instruction}}</text>
+                        <text class="xiangmu"> {{item.cate}}</text>
+                        <view class="line4"> </view>
+                        <view class="xiangqing"> <text class="button">查看详情</text></view>
+                        <view class="blank"> </view>
+                    </view>
+                </block>
+        </scroll-view>
+      
+</view>
+
+
+
+    
+
+

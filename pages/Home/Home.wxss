@@ -1,0 +1,96 @@
+swiper{
+   height: 410rpx;
+}
+.slide-image{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.mid{
+  position: relative;
+  width: 100%;
+  height: 250rpx;
+}
+.mid .leftimageview {
+  width: 280rpx;
+  height: 210rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;  
+}
+.mid .leftimageview image{
+  width: 100%;
+  height: 100%;
+}
+.mid .midTextView{
+  position: absolute;
+  height: 210rpx;
+  left: 330rpx;
+  top: 20rpx;
+  width: 350rpx;
+}
+.mid .midTextView text{
+  height: 215rpx;
+  font-size: 25rpx;
+  color:#3b2935;
+  margin-bottom: 15px;
+  word-wrap: break-wrap;
+  overflow: hidden;  
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
+.bottom{
+  border-bottom: 2rpx solid #3b2935;
+  margin-top: 10rpx;
+}
+.bottom .bottomImageView {
+  height: 400rpx;
+  width: 670rpx;
+  position: relative;
+  margin: 0 auto;
+  /*background-color: red;*/
+}
+.bottom .bottomImageView image{
+  width: 100%;
+  height: 100%;
+}
+.bottom .bottomInfoView{
+  display: flex;
+}
+.bottom .bottomInfoView .leftImageView{
+ width: 160rpx;
+ height: 160rpx;
+}
+.bottom .bottomInfoView .leftImageView image{
+  width: 100%;
+  height: 100%;
+}
+.bottom .rightinfoView {
+  /*background-color: red;*/
+  margin-left: 20rpx;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.bottom .rightinfoView text{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #3b2935;
+}
+.bottom .rightinfoView .title{
+  font-weight: 900;
+}
+.bottom .rightinfoView .address{
+  font-size: 25rpx;
+}
+.bottom .rightinfoView .distance{
+  font-size: 25rpx;
+}

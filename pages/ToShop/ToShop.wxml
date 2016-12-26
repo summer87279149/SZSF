@@ -1,0 +1,29 @@
+<view class="fixedView">
+
+    <view class="topview">
+        <image src="../../source/dianjin.png" mode="aspectFit"></image>
+        <view class="line1"></view>
+        <image src="../../source/kemang.png" mode="aspectFit"></image>
+        <view class="line2"></view>
+        <image src="../../source/jiayou.png" mode="aspectFit"></image>
+    </view>
+    <view class="buttonView">
+            <view  bindtap="sortBtnClicked"><text id="one" style="color: {{color[0]}};">距离排序</text> </view>
+            <view  bindtap="sortBtnClicked"><text id="two" style="color: {{color[1]}};">销量排序</text> </view>
+            <view  bindtap="sortBtnClicked"><text id="three" style="color: {{color[2]}};">价格排序</text> </view>
+     </view>
+</view>
+<scroll-view  style="height: 1100rpx;" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-top="100">
+    <block wx:for="{{shops}}">
+    <view class="listView">
+        <view class="leftImageView"><image src="{{item.images}}" mode="aspectFit"></image></view>
+        <view class="rightInfoView">
+            <view class="dianming"><text>{{item.shopname}}</text></view>
+            <view class="junjia"><text>均价:{{item.avgprice}}</text></view>
+            <view class="xinxi"><text>{{item.description}}</text></view>
+            <view class="juli"><text>距离:{{item.distance}}km</text></view>
+            <view class="pinfen"><text>评分:{{item.score}}分</text></view>
+        </view>
+     </view>
+    </block>
+</scroll-view>

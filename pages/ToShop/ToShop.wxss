@@ -1,0 +1,102 @@
+.fixedView{
+    position: fixed;
+    width: 100%;
+    z-index: 5555;
+    background-color: white;
+}
+.topview{
+    /*position: fixed*/
+    height: 250rpx;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.topview .line1{
+    width: 6rpx;
+    height: 200rpx;
+    background-color: #3b2935;
+}
+.topview .line2{
+    width: 6rpx;
+    height: 200rpx;
+    background-color: #3b2935;
+}
+
+.topview image{
+    padding: 0rpx 10rpx 0rpx 10rpx;
+    
+}
+.buttonView{
+    display: -webkit-flex;
+    justify-content:space-between;
+    
+}
+.buttonView view{
+    text-align: center;
+    flex: 1;
+    background-color: gray;
+    height: 40rpx;
+}
+.buttonView view text{
+    font-size: 30rpx;
+    line-height: 40rpx;
+}
+
+.listView{
+    top: 300rpx;
+    border-bottom: 2rpx solid #3b2935;
+    margin-top: 10rpx;
+    position: relative;
+}
+.listView .leftImageView{
+  height: 180rpx;
+  width: 240rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+}
+.listView .leftImageView image{
+  width: 100%;
+  height: 100%;
+}
+.listView .rightInfoView{
+    /*background-color: red;*/
+    height: 200rpx;
+    padding-left: 280rpx;
+    padding-top: 10rpx;
+}
+.listView .rightInfoView view text{
+    font-size: 26rpx;
+    line-height: 40rpx;
+}
+.listView .rightInfoView .junjia{
+    /*background-color: red;*/
+    position: absolute;
+    top: 10rpx;
+    right: 20rpx;
+}
+.listView .rightInfoView .dianming text{
+    font-size: 30rpx;
+    font-weight: 900;
+}
+.listView .rightInfoView .junjia text{
+    font-size: 30rpx;
+    font-weight: 900;
+}
+.listView .rightInfoView .xinxi text{
+ display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 40rpx;
+  color: #3b2935;
+}
+.listView .rightInfoView .juli{
+    position: absolute;
+    bottom: 20rpx;
+    right: 20rpx;
+    margin-top: 20rpx;
+}

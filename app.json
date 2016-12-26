@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/Home/Home",
+    "pages/ToShop/ToShop",
+    "pages/Tec/Tec",
+    "pages/Mall/Mall",
+    "pages/Mine/Mine",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "神州师傅",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/Home/Home",
+      "iconPath": "source/home.png",
+      "selectedIconPath": "source/toShop.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/ToShop/ToShop",
+      "iconPath": "source/toShop.png",
+      "selectedIconPath": "source/toShop.png",
+      "text": "到店"
+    },{
+      "pagePath": "pages/Tec/Tec",
+      "iconPath": "source/toHome.png",
+      "selectedIconPath": "source/toHome.png",
+      "text": "名师"
+    },{
+      "pagePath": "pages/Mall/Mall",
+      "iconPath": "source/mall.png",
+      "selectedIconPath": "source/mall.png",
+      "text": "商城"
+    },{
+      "pagePath": "pages/Mine/Mine",
+      "iconPath": "source/mine.png",
+      "selectedIconPath": "source/mine.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
