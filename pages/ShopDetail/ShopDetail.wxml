@@ -8,5 +8,7 @@
 </swiper>
 </view>
 <view class="midView">
-
+	<text>商家信息</text>
+	
+	
 </view>
