@@ -1,5 +1,8 @@
 //app.js
 App({
+  gobleLon:"",
+  gobleLat:"",
+  uid:"19",
   onLaunch: function () {
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
@@ -26,5 +29,18 @@ App({
   },
   globalData:{
     userInfo:null
+  },
+  continueIfLogin:function(e){
+    
+        var that = this
+        if (that.uid == null || that.uid == undefined || that.uid == "") {
+           wx.navigateTo({
+                url: '/pages/Login/Login'
+              })
+           
+       } else{
+             console.log("打印uid"+that.uid)
+            e()
+       }
   }
 })

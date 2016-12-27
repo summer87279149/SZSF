@@ -12,12 +12,7 @@ Page({
     shops:[],
     cell: {}
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  
   getdata:function(){
     var that = this
       util.getLonLat(function(lon1,lat1){
@@ -55,14 +50,22 @@ Page({
     console.log("首页上拉")
   },
   onLoad: function () {
-      this.getdata();
-  
+      this.getdata();  
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
         userInfo:userInfo
       })
+    })
+  },
+  showShopDetail:function(e){
+    console.log(e.currentTarget.dataset.sid);
+    var navUrl = "../ShopDetail/ShopDetail?sid="+e.currentTarget.dataset.sid
+    app.continueIfLogin(function(){
+      wx.navigateTo({
+                url: navUrl
+              })
     })
   }
 })

@@ -17,7 +17,7 @@
 
 
 <block wx:for="{{shops}}">
-  <view class="bottom">
+  <view class="bottom" bindtap="showShopDetail" data-sid="{{item.sid}}">
     <view class="bottomImageView"><image src="{{item.images}}"></image>  </view>
     <view class="bottomInfoView">
     <view class="leftImageView"><image src="../../source/findShop.png" mode="aspectFit"></image></view>

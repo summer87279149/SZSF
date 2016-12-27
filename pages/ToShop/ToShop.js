@@ -55,7 +55,7 @@ Page({
 
     }else{
       var array = that.data.shops;
-      console.log("1111111page＝"+pageValue);
+      console.log("page＝"+pageValue);
         if(id=="one"){
       console.log("id=1啊")
       http.httpGet("/Toshop/index",{lng:app.gobleLon,lat:app.gobleLat,type:0,city:700100000,page:pageValue},function(res){

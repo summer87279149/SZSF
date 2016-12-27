@@ -24,6 +24,7 @@
     color: #3b2935;
 }
 .cellView{
+    padding-left: 20rpx;
     height: 100rpx;
     border-bottom: 2rpx solid gray;
 }

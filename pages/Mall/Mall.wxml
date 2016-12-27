@@ -1,4 +1,5 @@
 <scroll-view scroll-y="true" style="height: 1300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" >
+
       <view class="top">
             <swiper class="swiperbanner" indicator-dots="true" autoplay="true">
                   <block wx:for="{{images}}">
@@ -22,9 +23,6 @@
                   </view>
             </block>
       </view>
-
-
-
 </scroll-view>
 <view class="bottom">
       <view class="gouwuche" ><image src="../../source/gouwuche.png" mode="aspectFill"></image><text>购物车</text></view>

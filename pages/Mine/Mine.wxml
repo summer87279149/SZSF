@@ -1,8 +1,8 @@
 <scroll-view style="height: 900rpx;" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-top="100">
     <view class="topView">
         <image src="../../source/wode.png" mode="aspectFit" class="tupian"></image>
-        <image src="../../source/wode.png" class="touxiang"></image>
-        <view><text>姓名{{}}</text></view>
+        <image src="{{userInfo.avatarUrl}}" class="touxiang"></image>
+        <view><text>{{userInfo.nickName}}</text></view>
     </view>
 
  <block wx:for="{{cells}}">

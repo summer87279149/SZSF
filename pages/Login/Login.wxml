@@ -1,0 +1,10 @@
+<view class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <toast hidden="{{toastHidden}}" duration="2000" bindchange="toastChange">
+          {{loginInfo}}
+     </toast>
+        <view><input name="tel" placeholder="请输入用户名" auto-focus/></view>
+        <view><input name="password" placeholder="请输入密码" auto-focus/></view>
+        <button formType="submit">登入</button>
+    </form>
+</view>

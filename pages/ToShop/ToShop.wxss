@@ -51,7 +51,7 @@
     position: relative;
 }
 .listView .leftImageView{
-  height: 180rpx;
+  height: 170rpx;
   width: 240rpx;
   position: absolute;
   left: 20rpx;

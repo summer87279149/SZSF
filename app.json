@@ -6,7 +6,9 @@
     "pages/Mall/Mall",
     "pages/Mine/Mine",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/Login/Login",
+    "pages/ShopDetail/ShopDetail"
     
   ],
   "window":{

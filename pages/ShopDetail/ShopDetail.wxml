@@ -1,0 +1,12 @@
+<view class="top">
+<swiper class="swiperbanner" indicator-dots="true" autoplay="true">
+  <block wx:for="{{shopInfo.banner}}">
+    <swiper-item>
+      <image mode="scaleToFill"  src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="midView">
+
+</view>
