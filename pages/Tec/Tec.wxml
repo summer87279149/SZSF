@@ -45,7 +45,7 @@
                         <text class="jieshao">{{item.instruction}}</text>
                         <text class="xiangmu"> {{item.cate}}</text>
                         <view class="line4"> </view>
-                        <view class="xiangqing"> <text class="button">查看详情</text></view>
+                        <view class="xiangqing" bindtap="showShopDetail" data-tid="{{item.tid}}"> <text class="button">查看详情</text></view>
                         <view class="blank"> </view>
                     </view>
                 </block>

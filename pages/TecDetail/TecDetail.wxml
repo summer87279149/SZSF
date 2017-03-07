@@ -1,0 +1,28 @@
+<view class="topView"> 
+    <image src="{{tecInfo.headimgurl}}" class="touxiang"></image>
+    <text class="name">{{tecInfo.tname}}</text>
+    <text class="jineng">{{tecInfo.cate}}</text>
+    <text class="cishu">服务{{tecInfo.orderqty}}次</text>
+    <view class="line1"> </view>
+    <view class="jieshao"><text >{{tecInfo.instruction}}</text></view>
+    <view class="line2"> </view>
+    <view class="pingjiaView">
+        <text>TA的评价</text>
+        <text>更多></text>
+    </view>
+</view>
+
+<view class="listView">
+    <text class="xiangmu">TA的服务项目</text>
+    <block wx:for="{{cellArr}}">
+        <view class="bottom" bindtap="showShopDetail" data-sid="{{item.sid}}">
+            <image src="{{item.logo}}"></image>
+            <view class="info">
+                <text class="name">{{item.projectname}}</text>
+                <text class="effect">{{item.effect}}</text>
+                <text>{{item.time}}分钟  {{item.selectnum}}人选择</text>
+                <text class="jiage">单价:{{item.price}}元</text>
+            </view>
+        </view>
+    </block>
+</view>

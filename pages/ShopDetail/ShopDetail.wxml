@@ -8,7 +8,33 @@
 </swiper>
 </view>
 <view class="midView">
-	<text>商家信息</text>
-	
-	
+  
+  <view>{{isCollect}}</view>
+	<text class="shopinfo">商家信息</text>
+  <view class="line1">  </view>
+  <text class="shopname">{{shopInfo.shopname}}</text>
+  <text class="address">{{shopInfo.address}}</text>
+  <text class="juli">距离:{{shopInfo.distance}}km</text>
+  <view class="line2">  </view>
+	<view class="commentView">
+      <view class="comment"><text>用户评价</text> </view>
+      <view><text>更多></text> </view>
+  </view>
 </view>
+<scroll-view scroll-y="false" scroll-x="true" style="width: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower">
+ <view class="bottomView" >
+ <block wx:for="{{cellproject}}" class="projectView">
+    <view class="bottom" bindtap="showShopDetail" data-sid="{{item.id}}">
+      <view class="bottomImageView"><image src="{{item.logo}}" ></image>  </view>
+      <view class="bottomInfoView">
+      <text class="name">{{item.projectname}}</text>
+      <view class="bottomTextView">
+        <text>{{item.time}}分钟</text>
+        <text>{{item.selectnum}}人选择</text>
+      </view>
+      
+      </view>
+    </view>
+  </block>
+</view>
+</scroll-view>

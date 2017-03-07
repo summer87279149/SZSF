@@ -1,11 +1,11 @@
 <!--<view>经纬度{{lon}},{{lat}},{{homebanner}}</view>-->
-<scroll-view scroll-y="true" style="height: 1300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" >
+<!--<scroll-view scroll-y="true" style="height: 1300rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" >-->
 
 <view class="top">
 <swiper class="swiperbanner" indicator-dots="true" autoplay="true">
   <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image mode="scaleToFill"  src="{{item}}" class="slide-image"/>
+    <swiper-item bindtap="showShopDetail" data-sid="{{item.id}}">
+      <image  mode="scaleToFill"  src="{{item.banner}}" class="slide-image"/>
     </swiper-item>
   </block>
 </swiper>
@@ -23,11 +23,11 @@
     <view class="leftImageView"><image src="../../source/findShop.png" mode="aspectFit"></image></view>
     <view class="rightinfoView">
         <text class="title">{{item.shopname}}</text>
-        <text class="address">{{item.description}}</text>
+        <text class="address">{{item.address}}</text>
         <text class="distance">距离:{{item.distance}}km</text>
     </view>
     </view>
   </view>
 </block>
 
-</scroll-view>
+<!--</scroll-view>-->

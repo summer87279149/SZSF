@@ -135,5 +135,14 @@ Page({
     if(this.data.color[2]=="white"){
        this.getdata("three",this.data.page);
     }
+  },
+  showShopDetail:function(e){
+    console.log(e.currentTarget.dataset.sid);
+    var navUrl = "../ShopDetail/ShopDetail?sid="+e.currentTarget.dataset.sid
+    app.continueIfLogin(function(){
+      wx.navigateTo({
+                url: navUrl
+              })
+    })
   }
 })

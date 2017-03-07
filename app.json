@@ -8,14 +8,16 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/Login/Login",
-    "pages/ShopDetail/ShopDetail"
+    "pages/ShopDetail/ShopDetail",
+    "pages/TecDetail/TecDetail"
     
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "神州师傅",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#dddddd",

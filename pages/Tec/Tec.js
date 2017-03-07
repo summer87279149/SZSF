@@ -58,13 +58,23 @@ Page({
       var that = this
      that.data.page+=1
     console.log("上拉刷新page是:"+that.data.page);
-  if(that.data.overflow=="0"){
-     console.log("开始加载数据,没有溢出,overflow="+that.data.overflow)
-      this.getdata(that.data.page)
-  }else{
-    console.log("溢出,不加载,overflow="+that.data.overflow)
-  }
+      if(that.data.overflow=="0"){
+        console.log("开始加载数据,没有溢出,overflow="+that.data.overflow)
+          this.getdata(that.data.page)
+      }else{
+        console.log("溢出,不加载,overflow="+that.data.overflow)
+      }
    
+  },
+  showShopDetail:function(e){
+    console.log("点击按钮的tid是",e);
+    var navUrl = "../TecDetail/TecDetail?tid="+e.currentTarget.dataset.tid
+    console.log("点击按钮的tid是",navUrl);
+    app.continueIfLogin(function(){
+      wx.navigateTo({
+                url: navUrl
+              })
+    })
   }
 
 

@@ -9,6 +9,7 @@ Page({
     lat:"",
     imgUrls: [],
     homebanner:[],
+    homebannerForId:[],
     shops:[],
     cell: {}
   },
@@ -28,7 +29,8 @@ Page({
       },function (res){
         console.log("cell的个数是"+res.homebanner.length);
         for (var i=0;i<res.homebanner.length;i++){
-         that.data.homebanner.push(res.homebanner[i].banner)
+         that.data.homebanner.push(res.homebanner[i])
+        //  that.data.homebannerForId.push(res.homebanner[i].id)
         } 
         var array = that.data.homebanner;
           that.setData({
@@ -44,6 +46,7 @@ Page({
     console.log("首页下拉刷新")
     //清空数组
     this.data.homebanner.length=0;
+    // this.data.homebannerForId.length=0;
     this.getdata();
   },
   lower:function(){
@@ -60,7 +63,7 @@ Page({
     })
   },
   showShopDetail:function(e){
-    console.log(e.currentTarget.dataset.sid);
+    console.log(e);
     var navUrl = "../ShopDetail/ShopDetail?sid="+e.currentTarget.dataset.sid
     app.continueIfLogin(function(){
       wx.navigateTo({

@@ -15,7 +15,7 @@
 </view>
 <scroll-view  style="height: 1100rpx;" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower"  scroll-top="100">
     <block wx:for="{{shops}}">
-    <view class="listView">
+    <view class="listView" bindtap="showShopDetail" data-sid="{{item.sid}}">
         <view class="leftImageView"><image src="{{item.images}}" mode="scaleToFill"></image></view>
         <view class="rightInfoView">
             <view class="dianming"><text>{{item.shopname}}</text></view>

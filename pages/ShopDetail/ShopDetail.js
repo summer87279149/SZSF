@@ -4,6 +4,7 @@ Page({
   data: {
      imgUrls: [],
      shopInfo:{},
+     cellproject:[]
   },
   onLoad: function (e) {
     console.log("页面传值",e)
@@ -12,6 +13,7 @@ Page({
       console.log("返回值",res)
       that.setData({
         shopInfo:res.shop,
+        cellproject:res.project
       })
     })
   }

@@ -1,8 +1,100 @@
 swiper{
-   height: 410rpx;
+   height: 400rpx;
+   margin-bottom: 10rpx;
 }
 .slide-image{
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.midView .shopinfo{
+    display: blockl;
+    margin-left: 15rpx; 
+}
+.midView .line1{
+    width: 100%;
+    height: 2rpx;
+    background-color: black;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.midView .shopname{
+    display: block;
+    color: #3b2935;
+    margin-left: 15rpx;
+    margin-top: 20rpx;
+}
+.midView .address{
+    margin-left: 15rpx;
+    margin-top: 25rpx;
+    font-size: 30rpx;
+    color: #3b2935;
+    word-wrap: break-wrap;
+     overflow: hidden;  
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+}
+.midView .juli{
+    display: block;
+    margin-left: 15rpx;
+    margin-top: 25rpx;
+    font-size: 30rpx;
+    color: #3b2935;
+}
+.midView .line2{
+    width: 100%;
+    height: 2rpx;
+    background-color: black;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.midView .commentView{
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.midView .commentView text{
+    padding-left: 15rpx;
+    padding-top: 15rpx;
+    padding-right: 15rpx;
+    font-size: 30rpx;
+    color: #3b2935;
+}
+.bottomView{
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.bottom{
+    margin: 20rpx 10rpx;
+}
+ .bottom .bottomImageView{
+    width: 350rpx;
+    height: 270rpx;
+}
+ .bottom .bottomImageView image{
+    width: 100%;
+    height: 100%;
+}
+.bottom .bottomInfoView .name{
+    display: block;
+    margin-top: 10rpx;
+}
+.bottom .bottomInfoView text{
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    color: #3b2935;
+}
+.bottom .bottomInfoView .bottomTextView{
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15rpx;
 }
